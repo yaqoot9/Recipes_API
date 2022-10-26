@@ -27,12 +27,12 @@ function displaydata(){
     var result=''
     for(var i=0;i<myRecipt.length;i++){
     result+=`
-    <div class="col-md-4 text-center">
+    <div class="col-md-3 text-center">
      <div class="data" >
      <h2  class="h2_main" >${myRecipt[i].title}</h2>
      <img src="${myRecipt[i].image_url}"  class="img_url">
-     <a data-bs-toggle="modal" data-bs-target="#recipeModal"
-     class="btn btn-light " onClick="openDetails(${myRecipt[i].recipe_id})">details</a>
+     <div class="my-2"><button data-bs-toggle="modal" data-bs-target="#recipeModal"
+      onClick="openDetails(${myRecipt[i].recipe_id})" class="btndetails">details</button></div>
 
      </div>
 
